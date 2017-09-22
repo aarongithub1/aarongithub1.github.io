@@ -33,7 +33,7 @@
       <div class="content">
           <p><strong>When would you use ‘=’ vs ‘==’ vs ‘.equals’? Explain what each of these does and in which cases you should use them.</strong><br /><br />
 
-In Java, the ‘=‘ is used to direct data to be stored into a variable. The data to the left of the ‘=‘ will be stored into the variable to the right of the ‘=‘.<br /><br />
+In Java, the ‘=‘ is used to direct data to be stored into a variable. The data to the right of the ‘=‘ will be stored into the variable to the left of the ‘=‘.<br /><br />
 
 Some examples of how this works:<br /><br />
 
@@ -54,7 +54,7 @@ Num2 = 20;<br />
 Num3 = Num1+Num2;<br />
 (Num3 will store the value of 30, it will not store the formula - "Num1+Num2")<br /><br />
 
-The ‘==‘ is one of six Boolean oporators for comparing items.<br /><br />
+The ‘==‘ is one of six Boolean operators for comparing items.<br /><br />
 
 > (greater than)<br />
 >= (greater than or equal to)<br />
@@ -63,7 +63,7 @@ The ‘==‘ is one of six Boolean oporators for comparing items.<br /><br />
 == (equal to)<br />
 != (not equal to)<br /><br />
 
-If the items being compared elavuate to a true statement then the value "true" will be stored into the variable.<br /><br />
+If the items being compared elavuate to a "true" statement then the value "true" will be stored into the variable.<br /><br />
 
 For example:<br /><br />
 
@@ -75,7 +75,7 @@ b = (x == y);<br />
 c = (x != y);<br /><br />
 
 The first statement will result in a "true" being stored into 'a', because x is less than y.<br />
-The second statement will result in a "false" being stored into 'b'<br />
+The second statement will result in a "false" being stored into 'b'<br />, because x is not equal to y.<br />
 And the third statement will result in a "true" being stored into 'c', because x is not equal to y.<br /><br />
 
 Finally, if you are trying to compare two 'strings' rather than 'integers/doubles' you will need to use the built-in method '.equals()'<br /><br />
@@ -142,15 +142,19 @@ no = word.equals("testing");<br />
       <div class="content">
           <p><strong>When it comes to methods, what is the difference between a “parameter” and an “argument”? Is there one? When would you use one versus the other?</strong><br /><br />
 
+              In a gernerized conversation about parameters and arguments, these terms seem somewhat interchangeable, in that no one will start
+              to get on your case if you swap these terms.<br /><br />
+              That being said, there is a difference between these two terms, because they discribe the same data before and after the handoff.<br /><br />
+
               When you want to call on a method you must write a Method Call, also known as a Function Call.<br/><br/>
               The following is a method call to the method "threeParameters"<br/>
-              This will pass three arguments (7, 8, 9), to the method named "threeParameters".<br/>
-              From there "threeParameters" will accept the arguments and will 'define' three integers (int a, int b, int c)<br/>
-              (int a, int b, int c) are the Parameters. After running the code within the curly braces, it will return a double value to be stored in the variable "getDouble"<br/><br/>
+              This will pass three <strong>arguments (7, 8, 9)</strong>, to the method named "threeParameters".<br/>
+              From there "threeParameters" will accept the arguments and will 'define' three integers (int a, int b, int c)<br/><br />
+              <strong>(int a, int b, int c)</strong> are the <strong>parameters</strong>. After running the code within the curly braces, it will return a double value to be stored in the variable "getDouble"<br/><br/><br/>
 
-              getDouble = threeParameters(7, 8, 9);<br/><br/>
+              getDouble = threeParameters(7, 8, 9);  << arguments<br/><br/>
 
-              public static double threeParameters(int a, int b, int c) {<br/>
+              public static double threeParameters(int a, int b, int c) {  << parameters<br/>
                   double tempDouble;<br/><br/>
                   tempDouble = (a*b)/c;<br/><br/>
                   return tempDouble<br/>
@@ -164,15 +168,15 @@ no = word.equals("testing");<br />
       <div class="content">
           <p><strong>What does it mean to ‘cast a double to an int’? Give an example of when you would do this and explain what is happening.</strong><br /><br />
               When we have seen casting, it has been used with the built-in Math.random() method. It does not require the Math.random() method to perform 'casting.'<br /><br />
-                Basicly what casting is doing, is taking a double and shaving off everything to the right of the decimal. (turning it into a whole number)<br /><br />
+                Basicly what casting is doing, is taking a fractional number and shaving off everything to the right of the decimal. (turning it into a whole number)<br /><br />
 
                 So, in the example:<br /><br />
 
                 i = (int)(9.98765);<br />
                 System.out.println("i = "+i);<br />
-                (output will be: 9)<br /><br />
+                <strong>output will be: 9</strong><br /><br />
 
-                This is because 9.98765 will be reduced to a 9 when you cast it into an integer.<br /></p>
+                This is because 9.98765 will have everything to the right of the decimal removed, and will only accept the whole number 9 when it is cast into an integer.<br /></p>
       </div>
 
   </div>
