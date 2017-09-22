@@ -63,7 +63,7 @@ The ‘==‘ is one of six Boolean operators for comparing items.<br /><br />
 == (equal to)<br />
 != (not equal to)<br /><br />
 
-If the items being compared elavuate to a "true" statement then the value "true" will be stored into the variable.<br /><br />
+If the items being compared evaluate to a "true" statement then the value "true" will be stored into the variable.<br /><br />
 
 For example:<br /><br />
 
@@ -75,7 +75,7 @@ b = (x == y);<br />
 c = (x != y);<br /><br />
 
 The first statement will result in a "true" being stored into 'a', because x is less than y.<br />
-The second statement will result in a "false" being stored into 'b'<br />, because x is not equal to y.<br />
+The second statement will result in a "false" being stored into 'b', because x is not equal to y.<br />
 And the third statement will result in a "true" being stored into 'c', because x is not equal to y.<br /><br />
 
 Finally, if you are trying to compare two 'strings' rather than 'integers/doubles' you will need to use the built-in method '.equals()'<br /><br />
@@ -142,9 +142,9 @@ no = word.equals("testing");<br />
       <div class="content">
           <p><strong>When it comes to methods, what is the difference between a “parameter” and an “argument”? Is there one? When would you use one versus the other?</strong><br /><br />
 
-              In a gernerized conversation about parameters and arguments, these terms seem somewhat interchangeable, in that no one will start
+              In a general conversation about parameters and arguments, these terms seem somewhat interchangeable, in that no one will start
               to get on your case if you swap these terms.<br /><br />
-              That being said, there is a difference between these two terms, because they discribe the same data before and after the handoff.<br /><br />
+              That being said, there is a difference between these two terms, because they describe the same data before and after the handoff.<br /><br />
 
               When you want to call on a method you must write a Method Call, also known as a Function Call.<br/><br/>
               The following is a method call to the method "threeParameters"<br/>
@@ -167,8 +167,9 @@ no = word.equals("testing");<br />
 
       <div class="content">
           <p><strong>What does it mean to ‘cast a double to an int’? Give an example of when you would do this and explain what is happening.</strong><br /><br />
-              When we have seen casting, it has been used with the built-in Math.random() method. It does not require the Math.random() method to perform 'casting.'<br /><br />
-                Basicly what casting is doing, is taking a fractional number and shaving off everything to the right of the decimal. (turning it into a whole number)<br /><br />
+
+                Basiclly, casting is taking a fractional number and shaving off everything to the right of the decimal (turning it into a whole number)<br />
+                another term to describe this is (truncating)<br /><br />
 
                 So, in the example:<br /><br />
 
@@ -176,7 +177,30 @@ no = word.equals("testing");<br />
                 System.out.println("i = "+i);<br />
                 <strong>output will be: 9</strong><br /><br />
 
-                This is because 9.98765 will have everything to the right of the decimal removed, and will only accept the whole number 9 when it is cast into an integer.<br /></p>
+                This is because 9.98765 will have everything to the right of the decimal removed, and will only accept the whole number 9 when it is cast into an integer.<br /><br />
+
+                When we have seen casting, it has been used with the built-in 'Math.random()' method.<br />
+                <strong>Math.random()</strong> generates a random double from 0.0 to 0.99999999999<br />
+                (It can be 0.0, but it will never be 1.0)<br /><br />
+
+                If you want to pick a number in a certain range, you need to type:<br /><br />
+
+                <strong>a = 0 + (int)(Math.random()*10);</strong><br />
+                This produces a random integer, 0-9<br />
+                (Don't try this in your calculator, 10 multiplied by a random number like 0.3456, will not be the same as what this statement is doing)<br />
+                <strong>Math.random()*10</strong>, changes this range to be from 0.0 to 9.999999999999<br /><br />
+                Then (int)(Math.random()*10) will take the 9.999999999999 and places it into an integer slot. Since integers don't support fractional numbers,<br />
+                the new number will be just a (9)<br /><br />
+
+                <strong>a = 1 + (int)(Math.random()*10);</strong><br />
+                This produces a random integer, 1-10<br />
+                The difference here is that we defined a starting point for the range by adding the <strong>'1 +'</strong> part to the statement.<br />
+                This will shift the range from 0-9 to 1-10. the number 10 in the statement is actually telling us that the range will have 10 total numbers to pick from<br />
+                and will start with 1 as the first usable number in the range.<br /><br />
+
+                <strong>a = 10 + (int)(Math.random()*11);</strong><br /><br />
+                This produces a random integer, 10-20<br />
+            </p>
       </div>
 
   </div>
