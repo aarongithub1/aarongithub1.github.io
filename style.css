@@ -28,6 +28,40 @@ li {
     width: 80px;
 }
 
+h1 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+h2 {
+    color: #466995;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 100px auto 20px auto;
+    padding: 30px;
+    text-align: center;
+    font-family: "Georgia", serif;
+
+}
+
+h3 {
+    color: red;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    /* padding: 30px; */
+}
+
+footer {
+  background-color: #DBE9EE;
+  text-align: center;
+  height: 100px;
+}
+
 .headerWords h1 {
     line-height: 0.5;
     color: black;
@@ -42,32 +76,6 @@ li {
     font-size: 50px;
     text-align: center;
     font-family: "Georgia", serif;
-}
-
-.headerWords ul {
-    /*
-    margin: 0 auto;
-    padding: 0 20px;
-    margin: 30px auto;
-    padding: 0 20px;
-    text-align: center;
-    line-height: 0.5;
-    display: inline-block;
-
-    text-align: center;
-
-    */
-
-}
-
-.headerWords li {
-    /*
-    font-family: "Georgia", serif;
-    font-size: 20px;
-    font-weight: 300;
-
-    */
-
 }
 
 .welcome {
@@ -90,7 +98,6 @@ li {
     font-size: 30px;
 }
 
-
 .blog1 {
     box-sizing: border-box;
     margin-top: 300px;
@@ -99,52 +106,13 @@ li {
     display: block;
     position: static;
 }
-/*
-.blog2 {
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    display: block;
-    position: static;
-
-}
-
-.blog3 {
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    display: block;
-    position: static;
-}
-
-.blog4 {
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    display: block;
-    position: static;
-}
-
-.blog5 {
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    display: block;
-    position: static;
-}
-
-*/
 
 .content {
     box-sizing: border-box;
     border: 2px solid black;
     padding: 10px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     width: 95%;
     display: block;
     position: static;
@@ -154,7 +122,7 @@ li {
 }
 
 .content p {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .media .content {
@@ -170,129 +138,3 @@ li {
     font-family: "Georgia", serif;
     font-size: 16px;
 }
-
-h1 {
-  color: #466995;
-  font-family: 'Oswald', sans-serif;
-  font-size: 32px;
-  font-weight: 300;
-  /*text-transform: uppercase; */
-}
-
-h2 {
-  color: #333;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 26px;
-  font-weight: 100;
-  margin: 0 auto 20px auto;
-}
-h3 {
-  color: #466995;
-  font-family: "Georgia", serif;
-  font-size: 18px;
-  text-align: center;
-  font-weight: 700;
-  /*text-transform: uppercase;*/
-  padding: 30px;
-}
-
-footer {
-  background-color: #DBE9EE;
-  text-align: center;
-  height: 100px;
-}
-/*
-header p {
-    text-align: center;
-    color: black;
-    font-family: "Georgia", serif;
-    font-size: 16px;
-}
-*/
-/*
-ul {
-  margin: 30px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-li {
-  color: #FFF;
-  font-family: 'Oswald', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 80px;
-}
-
-li:hover {
-  color: #DBE9EE;
-}
-*/
-h1 {
-  color: #466995;
-  font-family: 'Oswald', sans-serif;
-  font-size: 32px;
-  font-weight: 300;
-  /*text-transform: uppercase; */
-}
-
-h2 {
-  color: #333;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 26px;
-  font-weight: 100;
-  margin: 0 auto 20px auto;
-}
-
-h3 {
-  color: #466995;
-  padding: 30px;
-  text-align: center;
-  font-family: "Georgia", serif;
-  font-size: 50px;
-}
-/*
-h4 {
-  color: #466995;
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase
-}
-/*
-p {
-  color: #333;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 18px;
-}
-*/
-
-
-
-/*
-.question {
-  text-align: center;
-  position: relative;
-  top: 40px;
-}
-
-.answer {
-  border: 1px solid #466995;
-  margin: 20px;
-  display: inline-block;
-  height: 150px;
-  width: 200px;
-}
-
-.answer:hover {
-  background: #C0D6DF;
-  color: #FFF;
-}
-/*.headerWords li:hover {
-  color: #DBE9EE;
-}
-*/

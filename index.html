@@ -28,54 +28,157 @@
   </div>
 
   <div id="blog1" class="blog1">
-      <h3>blog 1</h3>
+      <h2>blog 1</h2>
 
       <div class="content">
-          <p>What is the difference between ‘switch’ and ‘if/else’? When would you use one versus the other?
-              When would you use ‘=’ vs ‘==’ vs ‘.equals’? Explain what each of these does and in which cases you should use them.</p>
+          <p><strong>When would you use ‘=’ vs ‘==’ vs ‘.equals’? Explain what each of these does and in which cases you should use them.</strong><br /><br />
+
+In Java, the ‘=‘ is used to direct data to be stored into a variable. The data to the left of the ‘=‘ will be stored into the variable to the right of the ‘=‘.<br /><br />
+
+Some examples of how this works:<br /><br />
+
+int Num = 0;<br />
+(int Num is “defined”, variable was created and assigned the value of 0 at the same time.)<br />
+————————————-<br />
+int Num;<br />
+Num = 5;<br />
+(Num will store the value of 5)<br />
+————————————-<br />
+int Num;<br />
+Num = 5*5;<br />
+(Num will store the value of 25)<br />
+————————————-<br />
+int Num1, Num2, Num3;<br />
+Num1 = 10;<br />
+Num2 = 20;<br />
+Num3 = Num1+Num2;<br />
+(Num3 will store the value of 30, it will not store the formula - "Num1+Num2")<br /><br />
+
+The ‘==‘ is one of six Boolean oporators for comparing items.<br /><br />
+
+> (greater than)<br />
+>= (greater than or equal to)<br />
+< (less than)<br />
+<= (less than or equal to)<br />
+== (equal to)<br />
+!= (not equal to)<br /><br />
+
+If the items being compared elavuate to a true statement then the value "true" will be stored into the variable.<br /><br />
+
+For example:<br /><br />
+
+int x = 5, y = 10;<br />
+boolean a, b, c;<br /><br />
+
+a = (x < y);<br />
+b = (x == y);<br />
+c = (x != y);<br /><br />
+
+The first statement will result in a "true" being stored into 'a', because x is less than y.<br />
+The second statement will result in a "false" being stored into 'b'<br />
+And the third statement will result in a "true" being stored into 'c', because x is not equal to y.<br /><br />
+
+Finally, if you are trying to compare two 'strings' rather than 'integers/doubles' you will need to use the built-in method '.equals()'<br /><br />
+
+For example:<br /><br />
+
+String word = "hello";<br />
+boolean yes, no;<br /><br />
+
+yes = word.equals("hello");<br />
+(This is true)<br /><br />
+no = ! word.equals("hello");<br />
+(This is false)<br /><br />
+yes = ! word.equals("testing");<br />
+(This is true)<br /><br />
+no = word.equals("testing");<br />
+(This is false)<br /><br />
+
+</p>
+
+
+
+
     </div>
   </div>
 
   <div id="blog2" class="blog2">
-      <h3>blog 2</h3>
+      <h2>blog 2</h2>
       <div class="content">
-          <p>What is ‘void’ in a method declaration? How does this differ from declaring a method with a return type?
-            Void' in a method declaration indicates that the method will not return a value. If you want to return a value
-                from a method the "return type" must be indicated in the declaration. <br /><br />For example: public static void testFunc(int testInt) {<br /><br />
-                    Will accept one integer, received from the Function Call, and declares a local variable called "testInt." After running the block of code between the curly braces, it will return nothing.<br /><br />
-                        public static double randomFunction(int x, int y) {<br /><br />In this example randomFunction will accept two integers and declare int x and y as local variables.<br />After it has completed it's task,
-                            it will return a "double" value.</p>
+          <p><strong>What is "void" in a method declaration? How does this differ from declaring a method with a return type?</strong><br /><br />
+            A "void" in a method declaration indicates that the method will not return a value. If you want to return a value
+                from a method the "return type" must be indicated in the method declaration. <br /><br />For example:<br /><br />public static void testMethod(int testInt) {<br /><br />}<br /><br />
+                    The example above will accept one integer, received from the Method Call, and declares a local variable called "testInt". After running any code between the curly braces, it will return nothing.<br /><br />
+                        public static double randomMethod(int x, int y) {<br />
+                            double tempDouble;<br /><br />
+                            tempDouble = x / y;<br /><br />
+                            return tempDouble;<br />
+                        }<br /><br /> or simply:<br /><br />
+                        public static double randomMethod(int x, int y) {<br /><br />
+
+                            return x / y;<br />
+                        }<br /><br />
+                        In these examples, "randomMethod" will accept two integers and declare int x and y as local variables.<br />After it has completed it's task,
+                            it will return a "double" value.<br /><br />
+                                <strong>Note: (You may have learned this as a Function, but in Java, they have Methods rather than Functions.)</strong></p>
       </div>
   </div>
 
   <div id="blog3" class="blog3">
-      <h3>blog 3</h3>
+      <h2>blog 3</h2>
 
       <div class="content">
-          <p>What happens when you include ‘import java.util.Scanner;’ in your code? Where does this functionality come from? What is the ‘java’ in ‘java.util.Scanner;’?</p>
+          <p><strong>What happens when you include ‘import java.util.Scanner;’ in your code? Where does this functionality come from? What is the ‘java’ in ‘java.util.Scanner;’?</strong><br/><br/>
+              The line of code “import java.util.Scanner;” is used to create a Scanner object for accepting user input from the Standard input (System.in). This functionality comes from the Scanner class within the java.util.* package.<br/><br/>
+                Java has a very large class library (a grouping of packages) called the Java API, the acronym for “Application Programming Interface.” The "java" in "java.util.Scanner;" can be thought of as a file folder, or a way to organize related classes within the Java API, where "java" is the main folder containing all the classes and functionality a developer might need.<br/><br/>
+                    <strong>Note: (There are other classes within the “java.util.*” package besides the Scanner class.)</strong><br/><br/></p>
       </div>
 
   </div>
 
   <div id="blog4" class="blog4">
-      <h3>blog 4</h3>
+      <h2>blog 4</h2>
 
       <div class="content">
-          <p>What is the difference between a ‘for’, ‘while’ and ‘do while’ loop? Give an example of when you would use one versus another. What is the benefit of a ‘do while’ over a ‘while’?</p>
+          <p><strong>When it comes to methods, what is the difference between a “parameter” and an “argument”? Is there one? When would you use one versus the other?</strong><br /><br />
+
+              When you want to call on a method you must write a Method Call, also known as a Function Call.<br/><br/>
+              The following is a method call to the method "threeParameters"<br/>
+              This will pass three arguments (7, 8, 9), to the method named "threeParameters".<br/>
+              From there "threeParameters" will accept the arguments and will 'define' three integers (int a, int b, int c)<br/>
+              (int a, int b, int c) are the Parameters. After running the code within the curly braces, it will return a double value to be stored in the variable "getDouble"<br/><br/>
+
+              getDouble = threeParameters(7, 8, 9);<br/><br/>
+
+              public static double threeParameters(int a, int b, int c) {<br/>
+                  double tempDouble;<br/><br/>
+                  tempDouble = (a*b)/c;<br/><br/>
+                  return tempDouble<br/>
+                  }</p>
       </div>
   </div>
 
   <div id="blog5" class="blog5">
-      <h3>blog 5</h3>
+      <h2>blog 5</h2>
 
       <div class="content">
-          <p>What does it mean to ‘cast a double to an int’? Give an example of when you would do this and explain what is happening.</p>
+          <p><strong>What does it mean to ‘cast a double to an int’? Give an example of when you would do this and explain what is happening.</strong><br /><br />
+              When we have seen casting, it has been used with the built-in Math.random() method. It does not require the Math.random() method to perform 'casting.'<br /><br />
+                Basicly what casting is doing, is taking a double and shaving off everything to the right of the decimal. (turning it into a whole number)<br /><br />
+
+                So, in the example:<br /><br />
+
+                i = (int)(9.98765);<br />
+                System.out.println("i = "+i);<br />
+                (output will be: 9)<br /><br />
+
+                This is because 9.98765 will be reduced to a 9 when you cast it into an integer.<br /></p>
       </div>
 
   </div>
 
   <div id="media" class="media">
-      <h3>One Punch Man - Saitama vs. Genos - Abridged Version</h3>
+      <h2>One Punch Man - Saitama vs. Genos<br/><em>Abridged Version</em></h2>
         <div class="content">
             <a href="https://www.youtube.com/watch?v=ZSVXoFlhi1w" target="_blank">
                 <img src="http://www.freakinawesomenetwork.net/wp-content/uploads/2015/11/cover.jpg" alt="One Punch Man.. Saitama vs. Genos"/></a>
@@ -83,17 +186,18 @@
   </div>
 
   <div id="media" class="media">
-      <h3>One Punch Man - Saitama vs. Genos - Full version</h3>
-        <div class="content">
-            <a href="https://www.youtube.com/watch?v=km2OPUctni4" target="_blank">
-                <img src="https://silentsubs.files.wordpress.com/2015/11/ohys-raws-one-punch-man-05-tx-1280x720-x264-aac_001_20106.png?w=474" alt="One Punch Man. Saitama vs. Genos"/></a>
-        </div>
+      <h2>Pickle Rick!</h2>
+        <h3>WARNING! Cartoon violence, blood, and offensive language.</h3>
+            <div class="content">
+                <a href="https://www.youtube.com/watch?v=SYW4GRCOyy0" target="_blank">
+                    <img src="https://res.cloudinary.com/teepublic/image/private/s--JJH6Uzjg--/t_Preview/b_rgb:c8e0ec,c_limit,f_jpg,h_630,q_90,w_630/v1491381016/production/designs/1390988_1.jpg" alt="Pickle Rick!"/></a>
+            </div>
   </div>
 
 
 
   <footer>
-    <h3>Thank you for visiting my blog!</h3>
+    <h2>Thank you for visiting my blog!</h2>
   </footer>
 
 </body>
